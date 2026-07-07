@@ -1,39 +1,202 @@
-
-body {
-    background-color: #000000;
+* body {
+    font-family: Libre Baskerville, sans-serif;
 }
 
+body {
+    margin: 0;
+    background-color: #000;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* metade da tela */
+
+    background-image: url("https://blog.ipog.edu.br/wp-content/uploads/2018/05/Ferramentas-de-Contabilidade.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+
+    z-index: -1;
+}
 
 .logo {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-
-    display:block;
-    margin: 0px auto;
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 9999;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-top: 20px;
-}
-
-.menu a{
+    font-size: 15px;
+    top: 20px;
+    left: 50%;
+    z-index: 1000;
     text-decoration: none;
     color: white;
     font-weight: bold;
-   
+    margin-top: 125px; /* ajustar conforme desejar */
+    
 }
 
-header{
-    text-align: center;
-}
-
-.frase{
+.frase {
     text-align: center;
     color: white;
+    margin-top: 80px;
+    font-size: 25px;
+}
+
+.button-inicio {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 5px;
+    height: 30px;
+    background-color: white; /* Cor de fundo original */
+    color: black;           /* Cor do texto original */
+    
+}
+
+
+.button-inicio:hover{ 
+    background-color: gray; /* Nova cor de fundo */
+    color: yellow; /* Nova cor do texto */
+    border: none;
+    transition: 0.2s; /* Tempo de transição de 3 décimos de segundo */
+}
+
+.button-sobre {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 5px;
+    height: 30px;
+}
+
+.button-sobre:hover{ 
+    background-color: gray; /* Nova cor de fundo */
+    color: yellow; /* Nova cor do texto */
+    border: none;
+    transition: 0.2s; /* Tempo de transição de 3 décimos de segundo */
+}
+
+.button-servicos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 5px;
+    height: 30px;
+}
+
+.button-servicos:hover{ 
+    background-color: gray; /* Nova cor de fundo */
+    color: yellow; /* Nova cor do texto */
+    border: none;
+    transition: 0.2s; /* Tempo de transição de 3 décimos de segundo */
+}
+
+.button-perguntas-frequentes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 5px;
+    height: 30px;
+}
+
+.button-perguntas-frequentes:hover{ 
+    background-color: gray; /* Nova cor de fundo */
+    color: yellow; /* Nova cor do texto */
+    border: none;
+    transition: 0.2s; /* Tempo de transição de 3 décimos de segundo */
+}
+
+p{
+    color:azure;
+    text-align: center;
+    color: white;
+    margin-top:100px;
+    font-size: 15px;
+    max-width: 500px; /* largura máxima do texto */
+    margin: 100px auto 0 auto; /* centraliza horizontalmente */
+    margin: 100px auto 0 auto; /* centraliza horizontalmente */
+    line-height: 1.5; /* melhora a leitura */
+    
+}
+
+.whatssapp{
+    display: flex;
+    gap: 30px;
+    margin-top: 0px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 5px;
+    height: 30px;
+    text-align: center;
+    padding: 15px 30px 30px 50px;
+    background-color: #2C9E1D;
+    color:white;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+
+}
+
+.whatssapp:hover{ 
+    background-color: green; /* Nova cor de fundo */
+    color: white; /* Nova cor do texto */
+    border: none;
+    transition: 0.2s; /* Tempo de transição de 3 décimos de segundo */
+}
+
+.button-whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-whatsapp:hover{
+    background-color: #1EBE5D;
+}
+
+.icone-whatsapp{
+    width: 20px;
+    height: 20px;
 }
