@@ -167,6 +167,12 @@ p{
     background-color: #2C9E1D;
     color:white;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+    bottom: 80px;
+    left: 48%;
+    right: 0;
+    position: fixed;
+    width: max-content;
+    transform: translateX(-50%)
 
 }
 
@@ -175,25 +181,6 @@ p{
     color: white; /* Nova cor do texto */
     border: none;
     transition: 0.2s; /* Tempo de transição de 3 décimos de segundo */
-}
-
-.button-whatsapp{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-    background-color: #25D366;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 20px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.button-whatsapp:hover{
-    background-color: #1EBE5D;
 }
 
 .icone-whatsapp{
